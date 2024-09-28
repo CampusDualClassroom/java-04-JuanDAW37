@@ -53,8 +53,7 @@ public class Exercise04 {
             int result = num * recursiveFactorial(num-1);
             return result;
         }else{
-            return 1;
+            return  1;
         }
-
     }
 }
