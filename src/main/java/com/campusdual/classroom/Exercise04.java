@@ -49,13 +49,12 @@ public class Exercise04 {
     }
 
     public static int recursiveFactorial(int num) {
-        int result = 1;
-        for(int i = 2; i <= num; ++i){
-            result = result * i;
+        if(num > 0){
+            int result = num * recursiveFactorial(num-1);
+            return result;
+        }else{
+            return 1;
         }
-        if(num == 0){
-            recursiveFactorial(num-1);
-        }
-        return result;
+
     }
 }
